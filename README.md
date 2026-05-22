@@ -7,24 +7,15 @@ This project implements anisotropic diffusion filtering for MRI image denoising 
 The diffusion-reaction equation considered is
 
 $$
-\begin{aligned}
-\frac{\partial \phi}{\partial t}
-&=
-\nabla \cdot (c \nabla \phi)
-+
-\lambda (\phi_0-\phi),
-\quad \text{in } \Omega,
-\
-\phi(x,y,0)
-&=
-\phi_0(x,y),
-\quad \text{in } \Omega,
-\
-c \frac{\partial \phi}{\partial \mathbf{n}}
-&=
-0,
-\quad \text{on } \partial \Omega.
-\end{aligned}
+\frac{\partial \phi}{\partial t} = \nabla \cdot (c \nabla \phi) + \lambda (\phi_0-\phi), \quad \text{in } \Omega,
+$$
+
+$$
+\phi(x,y,0) = \phi_0(x,y), \quad \text{in } \Omega,
+$$
+
+$$
+c \frac{\partial \phi}{\partial \mathbf{n}} = 0, \quad \text{on } \partial \Omega.
 $$
 
 where $\phi$ represents the filtered image, $\phi_0$ the original image, $\lambda$ the fidelity parameter controlling confidence in the original image, and $c>0$ is the diffusion coefficient, defined either as
@@ -36,8 +27,8 @@ $$
 or
 
 $$
-c(\|\nabla \phi\|)=
-\frac{1}{1+\left(\frac{\|\nabla\phi\|}{K}\right)^2}.
+c(||\nabla \phi||)=
+\frac{1}{1+\left(\frac{||\nabla\phi||}{K}\right)^2}.
 $$
 
 The nonlinear diffusion coefficient reduces smoothing near sharp gradients, allowing edges in the image to be preserved while noise is removed in smoother regions.
