@@ -1,6 +1,6 @@
 # Anisotropic Diffusion Filtering for MRI Image Denoising
 
-This project implements anisotropic diffusion filtering for MRI image denoising using PDE-based numerical methods. Both steady-state and time-dependent formulations are investigated using finite difference, finite volume, nonlinear iteration, and time integration methods for linear and nonlinear diffusion models. This project was developed as part of the Numerical Methods 2 course at TU Delft.
+This project implements anisotropic diffusion filtering for MRI image denoising using PDE-based numerical methods. Both steady-state and time-dependent formulations are investigated using finite difference, finite volume, nonlinear iteration, and time integration methods for linear and nonlinear diffusion models. The methods are tested on the Shepp–Logan phantom, a standard benchmark image in medical imaging. Artificial Gaussian noise is added to the simulated MRI image in order to investigate the effectiveness of the denoising methods and compare the reconstructed images with the known noiseless reference solution. This project was developed as part of the Numerical Methods 2 course at TU Delft.
 
 ## Problem
 
