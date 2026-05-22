@@ -43,8 +43,8 @@ $$
 - Finite Difference Method (FDM)
 - Finite Volume Method (FVM)
 - Picard iteration for nonlinear steady-state problems
-- Forward Euler time integration
-- Backward Euler time integration
+- Explicit Euler time integration
+- Implicit Euler time integration
 
 ## Results
 
