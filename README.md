@@ -50,11 +50,11 @@ $$
 
 The notebook contains:
 
-- denoised MRI reconstructions
-- comparisons between isotropic and anisotropic diffusion
-- steady-state filtering experiments
-- transient diffusion simulations
-- visualization of denoising performance
+- Denoised MRI reconstructions
+- Comparisons between isotropic and anisotropic diffusion
+- Steady-state filtering experiments
+- Transient diffusion simulations
+- Visualization of denoising performance
 
 The experiments demonstrate how anisotropic diffusion filtering can effectively reduce noise while preserving important image edges.
 
